@@ -18,30 +18,36 @@
             margin: 0;
         }
 
-        &__conhecendo{
+        &__conhecendo {
             padding: 40px 0;
             width: 100%;
 
-            @media screen and(max-width: 768px){
-                .row{
+            @media screen and(max-width: 768px) {
+                .row {
                     display: flex;
-                justify-content: center;
-                align-items: center;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
-            &__importancia{
-                &__title{
+
+            &__importancia {
+
+                @media screen and(max-width: 768px) {
+                    margin-top: 30px;
+                }
+
+                &__title {
                     font-weight: bolder;
                     color: #d0b376;
                     font-size: 48px;
                     text-align: center;
 
-                    @media screen and(max-width: 768px){
+                    @media screen and(max-width: 768px) {
                         font-size: 30px;
                     }
                 }
 
-                &__item{
+                &__item {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -55,22 +61,22 @@
                     background-position: center;
                     min-height: 300px;
                     border-bottom: 15px solid;
-                    border-image-source: linear-gradient(to right bottom, #aa6d28 50% , #FCF6BA, #f0e397, #aa6d28 100% );
+                    border-image-source: linear-gradient(to right bottom, #aa6d28 50%, #FCF6BA, #f0e397, #aa6d28 100%);
                     border-image-slice: 1;
                     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.37);
                     height: 100%;
 
-                    @media screen and(max-width: 768px){
+                    @media screen and(max-width: 768px) {
                         padding: 10px 30px;
                     }
 
-                    @media screen and(max-width: 992px){
-                        &:not(:last-child){
+                    @media screen and(max-width: 992px) {
+                        &:not(:last-child) {
                             margin-bottom: 40px;
                         }
                     }
 
-                    &__title{
+                    &__title {
                         color: #d0b376;
                         font-size: 30px;
                         margin-bottom: 10px;
@@ -79,7 +85,7 @@
                         text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295);
                     }
 
-                    &__text{
+                    &__text {
                         font-family: 'Montserrat', sans-serif;
                         text-transform: lowercase;
                         color: #fff;
@@ -87,33 +93,38 @@
                 }
             }
 
-          &__queratina{
-            margin-top: 80px;
-            text-align: left;
+            &__queratina {
+                margin-top: 80px;
+                text-align: left;
 
-            &__title{
-                margin-bottom: 10px;
-                text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295);
-                font-size: 35px;
+                &__title {
+                    margin-bottom: 10px;
+                    text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295);
+                    font-size: 35px;
+                }
+
+                img {
+                    border-bottom: 15px solid;
+                    border-image-source: linear-gradient(to right bottom, #aa6d28 50%, #FCF6BA, #f0e397, #aa6d28 100%);
+                    border-image-slice: 1;
+                    width: 100%;
+                    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.37);
+                }
             }
 
-            img{
-                border-bottom: 15px solid;
-                border-image-source: linear-gradient(to right bottom, #aa6d28 50% , #FCF6BA, #f0e397, #aa6d28 100% );
-                border-image-slice: 1;
-                width: 100%;
-                box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.37);
-            }
-          }
-        
         }
+
         &__detalhes {
             width: 100%;
-            
+
             &__resumo {
                 margin-top: 30px;
                 padding: 40px 0;
                 width: 100%;
+
+                @media screen and (max-width: 768px) {
+                    padding-bottom: 0;
+                }
 
                 &__brand {
                     width: 80%;
@@ -125,28 +136,55 @@
                 }
             }
 
-            &__porqueescolher{
-                margin-top: 80px;
+            &__caixa {
+                padding-top: 80px;
+                
+                @media screen and(max-width: 768px){
+                    padding-top: 40px;
+                }
+
+                img {
+                    width: 500px;
+
+                    @media screen and(max-width: 768px){
+                        width: 70vw;
+                    }
+                }
+            }
+
+            &__porqueescolher {
                 text-align: left;
-    
-                &__title{
+                margin-top: 30px;
+
+                @media screen and (max-width: 768px) {
+                    margin-top: 0;
+                }
+
+                &__title {
                     margin-bottom: 5px;
                     text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295);
                 }
-    
-                img{
+
+                &__text {
+                    text-align: justify;
+                    letter-spacing: 1;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                img {
                     border-bottom: 15px solid;
-                    border-image-source: linear-gradient(to right bottom, #aa6d28 50% , #FCF6BA, #f0e397, #aa6d28 100% );
+                    border-image-source: linear-gradient(to right bottom, #aa6d28 50%, #FCF6BA, #f0e397, #aa6d28 100%);
                     border-image-slice: 1;
                     width: 100%;
                     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.37);
                 }
-              }
-            
+            }
+
         }
     }
 }
 
-.row{
+.row {
     width: 100% !important;
 }

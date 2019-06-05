@@ -1715,6 +1715,11 @@
       .lp-pant .lp-pant--home {
         background-size: 120% 120%;
         background-position: 40%; } }
+    .lp-pant .lp-pant--home__content {
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .lp-pant .lp-pant--home__brand {
       height: 115px;
       display: flex;
@@ -1786,9 +1791,6 @@
       @media screen and (max-width: 398px) {
         .lp-pant .lp-pant--home__hero {
           right: 30px; } }
-      @media screen and (min-width: 1200px) {
-        .lp-pant .lp-pant--home__hero {
-          right: -170px; } }
       @media screen and (min-width: 1451px) {
         .lp-pant .lp-pant--home__hero {
           right: 40px;
@@ -1841,6 +1843,9 @@
           display: flex;
           justify-content: center;
           align-items: center; } }
+      @media screen and (max-width: 768px) {
+        .lp-pant .lp-pant--info__conhecendo__importancia {
+          margin-top: 30px; } }
       .lp-pant .lp-pant--info__conhecendo__importancia__title {
         font-weight: bolder;
         color: #d0b376;
@@ -1903,18 +1908,39 @@
         margin-top: 30px;
         padding: 40px 0;
         width: 100%; }
+        @media screen and (max-width: 768px) {
+          .lp-pant .lp-pant--info__detalhes__resumo {
+            padding-bottom: 0; } }
         .lp-pant .lp-pant--info__detalhes__resumo__brand {
           width: 80%; }
           @media screen and (max-width: 768px) {
             .lp-pant .lp-pant--info__detalhes__resumo__brand {
               width: 250px;
               margin-bottom: 20px; } }
+      .lp-pant .lp-pant--info__detalhes__caixa {
+        padding-top: 80px; }
+        @media screen and (max-width: 768px) {
+          .lp-pant .lp-pant--info__detalhes__caixa {
+            padding-top: 40px; } }
+        .lp-pant .lp-pant--info__detalhes__caixa img {
+          width: 500px; }
+          @media screen and (max-width: 768px) {
+            .lp-pant .lp-pant--info__detalhes__caixa img {
+              width: 70vw; } }
       .lp-pant .lp-pant--info__detalhes__porqueescolher {
-        margin-top: 80px;
-        text-align: left; }
+        text-align: left;
+        margin-top: 30px; }
+        @media screen and (max-width: 768px) {
+          .lp-pant .lp-pant--info__detalhes__porqueescolher {
+            margin-top: 0; } }
         .lp-pant .lp-pant--info__detalhes__porqueescolher__title {
           margin-bottom: 5px;
           text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295); }
+        .lp-pant .lp-pant--info__detalhes__porqueescolher__text {
+          text-align: justify;
+          letter-spacing: 1;
+          font-size: 18px;
+          line-height: 28px; }
         .lp-pant .lp-pant--info__detalhes__porqueescolher img {
           border-bottom: 15px solid;
           border-image-source: linear-gradient(to right bottom, #aa6d28 50%, #FCF6BA, #f0e397, #aa6d28 100%);

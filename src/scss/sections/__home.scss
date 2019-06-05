@@ -96,6 +96,13 @@
             background-position: 40%;
         }
 
+        &__content{
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         &__brand {
             height: 115px;
             display: flex;
@@ -189,9 +196,6 @@
                 right: 30px;
             }
 
-            @media screen and (min-width: 1200px) {
-                right: -170px;
-            }
 
             @media screen and (min-width: 1451px) {
                 right: 40px;
