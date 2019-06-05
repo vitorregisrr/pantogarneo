@@ -1,0 +1,152 @@
+.lp-pant {
+    &--info {
+        background-image: url(../img/bginfo.png);
+        background-size: cover;
+        padding: 140px 0 80px 0;
+        min-height: 100vh;
+        text-align: justify;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            background-size: cover;
+            background-position: 75% center;
+        }
+
+        .btn-col {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__conhecendo{
+            padding: 40px 0;
+            width: 100%;
+
+            @media screen and(max-width: 768px){
+                .row{
+                    display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            }
+            &__importancia{
+                &__title{
+                    font-weight: bolder;
+                    color: #d0b376;
+                    font-size: 48px;
+                    text-align: center;
+
+                    @media screen and(max-width: 768px){
+                        font-size: 30px;
+                    }
+                }
+
+                &__item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    text-align: center;
+                    padding: 20px 80px;
+                    background-color: #340c11;
+                    background-image: url('../img/cardbg.png');
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 300px;
+                    border-bottom: 15px solid;
+                    border-image-source: linear-gradient(to right bottom, #aa6d28 50% , #FCF6BA, #f0e397, #aa6d28 100% );
+                    border-image-slice: 1;
+                    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.37);
+                    height: 100%;
+
+                    @media screen and(max-width: 768px){
+                        padding: 10px 30px;
+                    }
+
+                    @media screen and(max-width: 992px){
+                        &:not(:last-child){
+                            margin-bottom: 40px;
+                        }
+                    }
+
+                    &__title{
+                        color: #d0b376;
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                        font-weight: lighter;
+                        text-transform: uppercase;
+                        text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295);
+                    }
+
+                    &__text{
+                        font-family: 'Montserrat', sans-serif;
+                        text-transform: lowercase;
+                        color: #fff;
+                    }
+                }
+            }
+
+          &__queratina{
+            margin-top: 80px;
+            text-align: left;
+
+            &__title{
+                margin-bottom: 10px;
+                text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295);
+                font-size: 35px;
+            }
+
+            img{
+                border-bottom: 15px solid;
+                border-image-source: linear-gradient(to right bottom, #aa6d28 50% , #FCF6BA, #f0e397, #aa6d28 100% );
+                border-image-slice: 1;
+                width: 100%;
+                box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.37);
+            }
+          }
+        
+        }
+        &__detalhes {
+            width: 100%;
+            
+            &__resumo {
+                margin-top: 30px;
+                padding: 40px 0;
+                width: 100%;
+
+                &__brand {
+                    width: 80%;
+
+                    @media screen and(max-width: 768px) {
+                        width: 250px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            &__porqueescolher{
+                margin-top: 80px;
+                text-align: left;
+    
+                &__title{
+                    margin-bottom: 5px;
+                    text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295);
+                }
+    
+                img{
+                    border-bottom: 15px solid;
+                    border-image-source: linear-gradient(to right bottom, #aa6d28 50% , #FCF6BA, #f0e397, #aa6d28 100% );
+                    border-image-slice: 1;
+                    width: 100%;
+                    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.37);
+                }
+              }
+            
+        }
+    }
+}
+
+.row{
+    width: 100% !important;
+}
