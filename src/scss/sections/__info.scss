@@ -6,10 +6,14 @@
         min-height: 100vh;
         text-align: justify;
 
+
         @media screen and (max-width: 768px) {
             display: block;
-            background-size: cover;
             background-position: 75% center;
+        }
+
+        @media screen and (max-height: 948px) and (min-width: 768px) and (max-width: 1455px) {
+            background-position: -40px;
         }
 
         .btn-col {
@@ -103,7 +107,7 @@
                     font-size: 35px;
                 }
 
-                .lp-pant--inner-desc{
+                .lp-pant--inner-desc {
                     margin-bottom: 20px !important;
                 }
 
@@ -142,15 +146,15 @@
 
             &__caixa {
                 padding-top: 80px;
-                
-                @media screen and(max-width: 768px){
+
+                @media screen and(max-width: 768px) {
                     padding-top: 40px;
                 }
 
                 img {
                     width: 500px;
 
-                    @media screen and(max-width: 768px){
+                    @media screen and(max-width: 768px) {
                         width: 70vw;
                     }
                 }
@@ -164,23 +168,23 @@
                     margin-top: 0;
                 }
 
-                
+
                 &__title {
                     margin-bottom: 5px;
                     text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295);
                 }
-                
+
                 &__text {
                     text-align: justify;
                     letter-spacing: 1;
                     font-size: 18px;
                     line-height: 28px;
-                    
+
                     @media screen and (min-width: 768px) {
                         padding-right: 50px;
                     }
                 }
-                
+
                 img {
                     border-bottom: 15px solid;
                     border-image-source: linear-gradient(to right bottom, #aa6d28 50%, #FCF6BA, #f0e397, #aa6d28 100%);

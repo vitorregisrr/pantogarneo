@@ -44,7 +44,7 @@
 
     <!-- Scripts -->
     <script defer>
-document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant--page-wrapper").fadeIn(400),$(".lp-pant--btn").click(function(){$(".lp-pant--btn").removeClass("active"),$(this).addClass("active")}),$("#lp-pant--btn__detalhes").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__conhecendo").offset().top},800),$("#lp-pant--info__conhecendo").fadeOut(200,function(){$("#lp-pant--info__detalhes").fadeIn(200)})}),$("#lp-pant--btn__conhecendo").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__detalhes").offset().top},400),$("#lp-pant--info__detalhes").fadeOut(200,function(){$("#lp-pant--info__conhecendo").fadeIn(200)})}),$("#lp-pant--scrolldown").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info").offset().top},600)})});
+document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant--page-wrapper").fadeIn(400),$(".lp-pant--btn").click(function(){$(".lp-pant--btn").removeClass("active"),$(this).addClass("active")}),$("#lp-pant--btn__detalhes").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__conhecendo").offset().top},800),$("#lp-pant--info__conhecendo").fadeOut(200,function(){$("#lp-pant--info__detalhes").fadeIn(200)}),$("#lp-pant--footer__conhecendo").fadeOut(200,function(){$("#lp-pant--footer__detalhes").fadeIn(200)})}),$("#lp-pant--btn__conhecendo").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__detalhes").offset().top},400),$("#lp-pant--info__detalhes").fadeOut(200,function(){$("#lp-pant--info__conhecendo").fadeIn(200)}),$("#lp-pant--footer__detalhes").fadeOut(200,function(){$("#lp-pant--footer__conhecendo").fadeIn(200)})}),$("#lp-pant--scrolldown").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info").offset().top},600)})});
 </script>
 
     <!-- Load fonts -->
@@ -1856,12 +1856,12 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     border-top: 15px solid;
     border-image-source: linear-gradient(to right bottom, #aa6d28 2%, #FCF6BA, #f0e397, #aa6d28 50%);
     border-image-slice: 1; }
-    .lp-pant .lp-pant--footer .container {
+    .lp-pant .lp-pant--footer__conhecendo {
       display: flex;
       justify-content: center;
       align-items: center; }
       @media screen and (max-width: 768px) {
-        .lp-pant .lp-pant--footer .container {
+        .lp-pant .lp-pant--footer__conhecendo {
           flex-direction: column; } }
     .lp-pant .lp-pant--footer b {
       margin-right: 20px; }
@@ -2039,7 +2039,8 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                             <hr class="lp-pant--home__caption__line">
                             <h4 class="lp-pant--home__caption__text">
                                 Auxilia na proteção
-                                dos fios contra os danos, mantendo-os com saúde, brilho e resistência<small><sup>1-8</sup></small>
+                                dos fios contra os danos, mantendo-os com saúde, brilho e
+                                resistência<small><sup>1-8</sup></small>
                             </h4>
                         </div>
                     </div>
@@ -2155,20 +2156,32 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         </section>
         <footer id="lp-pant--footer" class="lp-pant--footer">
             <div class="container">
-                <div><b>Referências bibliográficas:</b></div>
-                <div>
-                    <p>P1. Marshall RC et al. Structure and biochemistry of mammalian hard keratin. Electron Microsc
-                        Rev. 1991;4(1):47-83. 2. Pantogar Neo: Proteína hidrolisada de Oryza sativa com BCAAs, levedura,
-                        vitaminas e minerais. Embalagem do produto. Taboão da Serra, SP: Biolab Sanus Farmacêutica Ltda.
-                        2018. 3. Finner AM. Nutrition and hair: deficiencies and supplements. Dermatol Clin. 2013
-                        Jan;31(1):167-72. 4. Cozzolino SMF. Biodisponibilidade de nutrientes. 5ª edição. Revisada e
-                        atualizada. São Paulo: Manole, 2016. 5. Caballero-Córdoba GM et al. Composição Química da
-                        Biomassa de Levedura Integral (Saccharomyces sp.) e Determinação do Valor Nutritivo da Proteína
-                        em Células Íntegras ou Rompidas Mecanicamente. Cienc Tecnol Aliment, 17 (2):102-106, 1997. 6.
-                        Aminograma do extrato proteíco de Oryza sativa (dados do fornecedor). 7. Pantogar Neo: Proteína
-                        hidrolisada de Oryza sativa com BCAAs, levedura, vitaminas e minerais. Perfil do produto. Taboão
-                        da Serra, SP: Biolab Sanus Farmacêutica Ltda. 2018. 8. Lee WS. Photoaggravation of hair aging.
-                        Int J Trichology. 2009 Jul;1(2):94-9.</p>
+                <div id="lp-pant--footer__conhecendo" class="lp-pant--footer__conhecendo" style="display: none">
+                    <div><b>Referências bibliográficas:</b></div>
+                    <div>
+                        <p>P1. Marshall RC et al. Structure and biochemistry of mammalian hard keratin. Electron Microsc
+                            Rev. 1991;4(1):47-83. 2. Pantogar Neo: Proteína hidrolisada de Oryza sativa com BCAAs,
+                            levedura,
+                            vitaminas e minerais. Embalagem do produto. Taboão da Serra, SP: Biolab Sanus Farmacêutica
+                            Ltda.
+                            2018. 3. Finner AM. Nutrition and hair: deficiencies and supplements. Dermatol Clin. 2013
+                            Jan;31(1):167-72. 4. Cozzolino SMF. Biodisponibilidade de nutrientes. 5ª edição. Revisada e
+                            atualizada. São Paulo: Manole, 2016. 5. Caballero-Córdoba GM et al. Composição Química da
+                            Biomassa de Levedura Integral (Saccharomyces sp.) e Determinação do Valor Nutritivo da
+                            Proteína
+                            em Células Íntegras ou Rompidas Mecanicamente. Cienc Tecnol Aliment, 17 (2):102-106, 1997.
+                            6.
+                            Aminograma do extrato proteíco de Oryza sativa (dados do fornecedor). 7. Pantogar Neo:
+                            Proteína
+                            hidrolisada de Oryza sativa com BCAAs, levedura, vitaminas e minerais. Perfil do produto.
+                            Taboão
+                            da Serra, SP: Biolab Sanus Farmacêutica Ltda. 2018. 8. Lee WS. Photoaggravation of hair
+                            aging.
+                            Int J Trichology. 2009 Jul;1(2):94-9.</p>
+                    </div>
+                </div>
+                <div id="lp-pant--footer__detalhes" class="lp-pant--footer__detalhes">
+                    <b>Registro MS nº 6.7240.0001.001-9</b>
                 </div>
             </div>
         </footer>
