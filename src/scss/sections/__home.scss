@@ -170,9 +170,9 @@
 
         &__hero {
             position: absolute;
-            height: 32vw;
-            width: 41vw;
-            right: 10px;
+            height: 500px;
+            width: 700px;
+            right: -180px;
             background-image: url(../img/hero1.png);
             background-size: contain;
             background-repeat: no-repeat;
@@ -186,9 +186,9 @@
             @media screen and (max-width: 768px) {
                 position: relative;
                 right: 80px;
-                top: 0px;
-                height: 30vh;
-                width: 350px;
+                top: -30px;
+                height: 230px;
+                width: 400px;
                 background-position:  center;
             }
 
@@ -196,11 +196,9 @@
                 right: 30px;
             }
 
-
-            @media screen and (min-width: 1451px) {
-                right: 40px;
-                height: 580px;
-                width: 600px;
+            @media screen and (min-width: 1300px){
+                height: 700px;
+                width: 900px;
             }
         }
 
