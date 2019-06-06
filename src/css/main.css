@@ -1811,6 +1811,8 @@
         .lp-pant .lp-pant--home__hero {
           height: 450px;
           width: 650px; } }
+  .lp-pant .ls-0 {
+    letter-spacing: 0 !important; }
   .lp-pant .lp-pant--footer {
     background-color: #d0b376;
     padding: 20px;
@@ -1826,6 +1828,9 @@
           flex-direction: column; } }
     .lp-pant .lp-pant--footer .title {
       margin-right: 20px; }
+      @media screen and (max-width: 768px) {
+        .lp-pant .lp-pant--footer .title {
+          margin-right: 0; } }
     .lp-pant .lp-pant--footer p {
       font-family: 'Montserrat', sans-serif;
       font-size: 13px;
@@ -1849,7 +1854,8 @@
         background-position: 75% center; } }
     @media screen and (max-height: 948px) and (min-width: 768px) and (max-width: 1455px) {
       .lp-pant .lp-pant--info {
-        background-position: -40px; } }
+        background-size: 120% 110%;
+        background-position: -110px; } }
     .lp-pant .lp-pant--info .btn-col {
       position: relative;
       padding: 0;

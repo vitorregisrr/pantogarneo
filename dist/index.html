@@ -1716,6 +1716,9 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         width: 40px;
         height: 40px;
         bottom: 60px; } }
+    @media screen and (min-width: 768px) and (max-height: 700px) {
+      .lp-pant .lp-pant--scrolldown {
+        bottom: 18px; } }
     .lp-pant .lp-pant--scrolldown:focus, .lp-pant .lp-pant--scrolldown:active {
       outline: none; }
   .lp-pant .lp-pant--divisor {
@@ -1769,7 +1772,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     @media screen and (max-height: 948px) and (min-width: 768px) and (max-width: 1455px) {
       .lp-pant .lp-pant--home {
         background-size: 120% 120%;
-        background-position: 40%; } }
+        background-position: 0%; } }
     .lp-pant .lp-pant--home__content {
       height: 50%;
       display: flex;
@@ -1780,6 +1783,9 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
       display: flex;
       justify-content: flex-start;
       margin-bottom: 40px; }
+      @media screen and (min-width: 768px) and (max-height: 700px) {
+        .lp-pant .lp-pant--home__brand {
+          margin-bottom: 15px; } }
       @media screen and (max-width: 768px) {
         .lp-pant .lp-pant--home__brand {
           height: 70px; } }
@@ -1793,6 +1799,9 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     .lp-pant .lp-pant--home__caption {
       height: 100%;
       padding-top: 40px; }
+      @media screen and (min-width: 768px) and (max-height: 700px) {
+        .lp-pant .lp-pant--home__caption {
+          padding-top: 20px; } }
       @media screen and (max-width: 768px) {
         .lp-pant .lp-pant--home__caption {
           padding-top: 20px; } }
@@ -1823,6 +1832,9 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
           .lp-pant .lp-pant--home__caption__text {
             text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.658);
             font-size: 23px; } }
+        @media screen and (min-width: 768px) and (max-height: 700px) {
+          .lp-pant .lp-pant--home__caption__text {
+            font-size: 30px; } }
     .lp-pant .lp-pant--home__hero {
       position: absolute;
       height: 500px;
@@ -1850,6 +1862,12 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         .lp-pant .lp-pant--home__hero {
           height: 700px;
           width: 900px; } }
+      @media screen and (min-width: 768px) and (max-height: 730px) {
+        .lp-pant .lp-pant--home__hero {
+          height: 450px;
+          width: 650px; } }
+  .lp-pant .ls-0 {
+    letter-spacing: 0 !important; }
   .lp-pant .lp-pant--footer {
     background-color: #d0b376;
     padding: 20px;
@@ -1863,14 +1881,19 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
       @media screen and (max-width: 768px) {
         .lp-pant .lp-pant--footer__conhecendo {
           flex-direction: column; } }
-    .lp-pant .lp-pant--footer b {
+    .lp-pant .lp-pant--footer .title {
       margin-right: 20px; }
+      @media screen and (max-width: 768px) {
+        .lp-pant .lp-pant--footer .title {
+          margin-right: 0; } }
     .lp-pant .lp-pant--footer p {
       font-family: 'Montserrat', sans-serif;
       font-size: 13px;
       line-height: 18px;
       font-weight: 500;
       margin: 5px; }
+      .lp-pant .lp-pant--footer p b {
+        margin-left: 4px; }
     @media screen and (max-width: 768px) {
       .lp-pant .lp-pant--footer {
         text-align: center; } }
@@ -1883,8 +1906,11 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     @media screen and (max-width: 768px) {
       .lp-pant .lp-pant--info {
         display: block;
-        background-size: cover;
         background-position: 75% center; } }
+    @media screen and (max-height: 948px) and (min-width: 768px) and (max-width: 1455px) {
+      .lp-pant .lp-pant--info {
+        background-size: 120% 110%;
+        background-position: -110px; } }
     .lp-pant .lp-pant--info .btn-col {
       position: relative;
       padding: 0;
@@ -2039,7 +2065,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                             <hr class="lp-pant--home__caption__line">
                             <h4 class="lp-pant--home__caption__text">
                                 Auxilia na proteção
-                                dos fios contra os danos, mantendo-os com saúde, brilho e
+                                dos fios contra os danos, mantend<span class="ls-0">o-</span>os com saúde, brilho e
                                 resistência<small><sup>1-8</sup></small>
                             </h4>
                         </div>
@@ -2056,14 +2082,16 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                             produto</button>
                     </div>
                 </div>
-                <article id="lp-pant--info__detalhes" class="lp-pant--info__detalhes">
+                <article id="lp-pant--info__conhecendo" class="lp-pant--info__detalhes" style="display: none">
                     <div class="row lp-pant--info__detalhes__resumo">
                         <div class="col-md-4 d-flex justify-content-center align-items-center">
                             <img class="lp-pant--info__detalhes__resumo__brand" src="data:image/unknown;base64,iVBORw0KGgoAAAANSUhEUgAAAYQAAABjCAMAAACsVYdvAAAAt1BMVEVHcEz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////911ZqYAAAAPHRSTlMA8GD+0aD7H5CAMD8ExXAmAVAIdFaXsJvqEdjiW/doDPNGFoOl7d2IQudkiys6GrxsNkp5fauzt8kizcGWhSeLAAAN6UlEQVR42u2d6WKqPBOAURSxooKKioL7inWvO/d/XZ8qCdnRqu353jJ/erQpwDzJZGYyyZGkf0g+vJvEpUgiCBGECEIEIYIQQYggRBJBiCBE8p+BsKxsFloE4VfFmMdHi7IeQfhNybbLi+1wFUH4RbHKmcQ23V4/ex1t6g7Nipp2p817Wn8a68m5+dpI3Xn9g51Wk2q3kWk+BUH/LK3VijkpGvn7XuvcfmJe2t/5oJ3Ront50PjyPhNfGC2GDW0/SqfKOftRpaev4rPTjK3jAVFOxY74vvYmBlt7teHt9azbFdNtv1Xq9rFxfbP0ILj83C1wIMxVXDLkjUvlfnDjcW8VoqdCvIw86ED9wB40w+gNai1o39qsbka+hOlKkhq3z5fXXm2Vc8uytCi3JTNbeBTC7Uaxa++y6x4uSu/AH3rDGNFaTs4uSvc/qX67zO1j4qyLdAv/g2pOY0IgJYf3UerG3nhtCfq0SrSXvVMGedA0OciM46UNKjXj8osyoquLJG6fM1L+dPtXWZLs8rbSkb4PYXZivL8yYWPVFzFG65YtgDA70n+QyD8KQcu1WE2qLscl0dbM9uUZD8JnltV+0+RDGAFVlL87B8ALZ/psDdRYRrcz5+hrovMgzOqs9q3VYxAOR04bbz5jTkF7TvPqiA0h53DUkOJBKMK/eBrCiHNzT47RRvOzzlOFN+RAGCTYV1dGj0BYxbg39qpL+u2mVW5zJceAoFW47QcdDgTFexWEzxb/7ZwpyYD/ameNsSFwpXW4H4KtiK7kUP45t2ehgkDQeoJ2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" alt="Logo pantogar branco">
                         </div>
                         <div class="col-md-7">
-                            <p class="lp-pant--inner-desc mb-3 text-italic">Pantogar® NEO contém proteína hidrolisada de
-                                Oryza sativa com BCAAs, levedura, vitaminas e minerais que auxiliam na manutenção da
+                            <p class="lp-pant--inner-desc mb-3">Pantogar<small><sup>®</sup></small> NEO contém proteína
+                                hidrolisada de
+                                <i>Oryza sativa</i> com <i>BCAAs</i>, levedura, vitaminas e minerais que auxiliam na
+                                manutenção da
                                 saúde dos cabelos femininos.
                             </p>
                         </div>
@@ -2072,7 +2100,8 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                         <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
                             <h4 class="lp-pant--inner-title lp-pant--info__detalhes__porqueescolher__title">Por que
                                 escolher Pantogar NEO? </h4>
-                            <p class="lp-pant--inner-desc lp-pant--info__detalhes__porqueescolher__text">Pantogar® NEO
+                            <p class="lp-pant--inner-desc lp-pant--info__detalhes__porqueescolher__text">
+                                Pantogar<small><sup>®</sup></small> NEO
                                 ajuda a manter as necessidades diárias de algumas vitaminas, minerais e aminoácidos
                                 essenciais para a manutenção da saúde dos cabelos.</p>
                         </div>
@@ -2086,7 +2115,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                         </div>
                     </div>
                 </article>
-                <article id="lp-pant--info__conhecendo" class="lp-pant--info__conhecendo" style="display: none">
+                <article id="lp-pant--info__detalhes" class="lp-pant--info__conhecendo">
                     <div class="row lp-pant--info__conhecendo__fatores ">
                         <div class="col col-12">
                             <h3 class="lp-pant--inner-title">Fatores que levam aos distúrbios da haste capilar (fio de
@@ -2107,7 +2136,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
                         <div class="row">
                             <div class="col-12">
                                 <h2 class="lp-pant--info__conhecendo__importancia__title">A importância da Biotina e do
-                                    Zinco
+                                    Zinco:
                                 </h2>
                             </div>
                         </div>
@@ -2156,32 +2185,46 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         </section>
         <footer id="lp-pant--footer" class="lp-pant--footer">
             <div class="container">
-                <div id="lp-pant--footer__conhecendo" class="lp-pant--footer__conhecendo" style="display: none">
-                    <div><b>Referências bibliográficas:</b></div>
-                    <div>
-                        <p>P1. Marshall RC et al. Structure and biochemistry of mammalian hard keratin. Electron Microsc
-                            Rev. 1991;4(1):47-83. 2. Pantogar Neo: Proteína hidrolisada de Oryza sativa com BCAAs,
-                            levedura,
-                            vitaminas e minerais. Embalagem do produto. Taboão da Serra, SP: Biolab Sanus Farmacêutica
-                            Ltda.
-                            2018. 3. Finner AM. Nutrition and hair: deficiencies and supplements. Dermatol Clin. 2013
-                            Jan;31(1):167-72. 4. Cozzolino SMF. Biodisponibilidade de nutrientes. 5ª edição. Revisada e
-                            atualizada. São Paulo: Manole, 2016. 5. Caballero-Córdoba GM et al. Composição Química da
-                            Biomassa de Levedura Integral (Saccharomyces sp.) e Determinação do Valor Nutritivo da
-                            Proteína
-                            em Células Íntegras ou Rompidas Mecanicamente. Cienc Tecnol Aliment, 17 (2):102-106, 1997.
-                            6.
-                            Aminograma do extrato proteíco de Oryza sativa (dados do fornecedor). 7. Pantogar Neo:
-                            Proteína
-                            hidrolisada de Oryza sativa com BCAAs, levedura, vitaminas e minerais. Perfil do produto.
-                            Taboão
-                            da Serra, SP: Biolab Sanus Farmacêutica Ltda. 2018. 8. Lee WS. Photoaggravation of hair
-                            aging.
-                            Int J Trichology. 2009 Jul;1(2):94-9.</p>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="lp-pant--footer__conhecendo" class="lp-pant--footer__conhecendo" style="display: none">
+                            <div><b class="title">Referências bibliográficas:</b></div>
+                            <div>
+                                <p><b>1.</b> Marshall RC et al. Structure and biochemistry of mammalian hard keratin.
+                                    Electron Microsc
+                                    Rev. 1991;4(1):47-83. <b>2.</b> Pantogar Neo: Proteína hidrolisada de Oryza sativa
+                                    com BCAAs,
+                                    levedura,
+                                    vitaminas e minerais. Embalagem do produto. Taboão da Serra, SP: Biolab Sanus
+                                    Farmacêutica
+                                    Ltda.
+                                    2018.<b>3.</b> Finner AM. Nutrition and hair: deficiencies and supplements. Dermatol
+                                    Clin. 2013
+                                    Jan;31(1):167-72. <b>4.</b> Cozzolino SMF. Biodisponibilidade de nutrientes. 5ª
+                                    edição. Revisada e
+                                    atualizada. São Paulo: Manole, 2016. <b>5.</b> Caballero-Córdoba GM et al.
+                                    Composição Química da
+                                    Biomassa de Levedura Integral (Saccharomyces sp.) e Determinação do Valor Nutritivo
+                                    da
+                                    Proteína
+                                    em Células Íntegras ou Rompidas Mecanicamente. Cienc Tecnol Aliment, 17 (2):102-106,
+                                    1997.
+                                    <b>6.</b>Aminograma do extrato proteíco de Oryza sativa (dados do fornecedor). 7.
+                                    Pantogar Neo:
+                                    Proteína
+                                    hidrolisada de Oryza sativa com BCAAs, levedura, vitaminas e minerais. Perfil do
+                                    produto.
+                                    Taboão
+                                    da Serra, SP: Biolab Sanus Farmacêutica Ltda. 2018. 8. Lee WS. Photoaggravation of
+                                    hair
+                                    aging.
+                                    Int J Trichology. 2009 Jul;1(2):94-9.</p>
+                            </div>
+                        </div>
+                        <div id="lp-pant--footer__detalhes" class="lp-pant--footer__detalhes">
+                            <b class="title">Registro MS nº 6.7240.0001.001-9</b>
+                        </div>
                     </div>
-                </div>
-                <div id="lp-pant--footer__detalhes" class="lp-pant--footer__detalhes">
-                    <b>Registro MS nº 6.7240.0001.001-9</b>
                 </div>
             </div>
         </footer>
