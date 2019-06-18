@@ -39,20 +39,37 @@
     dos fios contra os danos, mantendo-os com saúde, brilho e resistência1-8
 ">
 
-    <!-- Comentar JQUERY antes de criar a produção -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous" defer></script>
+    <!-- JQUERY comentado para produção
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"
+        integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous" defer></script> -->
 
     <!-- Scripts -->
     <script defer>
 document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant--page-wrapper").fadeIn(400),$(".lp-pant--btn").click(function(){$(".lp-pant--btn").removeClass("active"),$(this).addClass("active")}),$("#lp-pant--btn__detalhes").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__conhecendo").offset().top},800),$("#lp-pant--info__conhecendo").fadeOut(200,function(){$("#lp-pant--info__detalhes").fadeIn(200)}),$("#lp-pant--footer__conhecendo").fadeOut(200,function(){$("#lp-pant--footer__detalhes").fadeIn(200)})}),$("#lp-pant--btn__conhecendo").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info__detalhes").offset().top},400),$("#lp-pant--info__detalhes").fadeOut(200,function(){$("#lp-pant--info__conhecendo").fadeIn(200)}),$("#lp-pant--footer__detalhes").fadeOut(200,function(){$("#lp-pant--footer__conhecendo").fadeIn(200)})}),$("#lp-pant--scrolldown").click(function(){$("html, body").animate({scrollTop:$("#lp-pant--info").offset().top},600)})});
 </script>
 
-    <!-- Load fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i&display=swap" rel="stylesheet">
-
     <!-- Styles -->
     <style>
+@font-face {
+  font-family: "Pluto Sans Regular";
+  src: url("./fonts/PlutoSansRegular.eot");
+  src: url("./fonts/PlutoSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Pluto Sans Light";
+  src: url("./fonts/PlutoSansLight.eot");
+  src: url("./fonts/PlutoSansLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Pluto Sans Bold";
+  src: url("./fonts/PlutoSansBold.eot");
+  src: url("./fonts/PlutoSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Utopia";
+  src: url("./fonts/UtopiaSemiboldItalic.eot");
+  src: url("./fonts/UtopiaSemiboldItalic.ttf") format("truetype"); }
+
 .lp-pant {
   /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
@@ -68,7 +85,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  font-family: 'Merriweather', serif; }
+  font-family: 'Pluto Sans Regular', serif; }
 
 @-ms-viewport {
   .lp-pant {
@@ -1571,12 +1588,13 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
       -ms-flex-item-align: stretch !important;
       align-self: stretch !important; } }
   .lp-pant .lp-pant--inner-title {
-    font-size: 28px;
+    font-family: 'Utopia';
+    font-size: 34px;
     font-weight: lighter;
     color: #d0b376;
     margin-bottom: 30px; }
   .lp-pant .lp-pant--inner-desc {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pluto Sans Regular';
     font-size: 16px;
     font-weight: lighter;
     line-height: 25px;
@@ -1640,7 +1658,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
   .lp-pant .lp-pant--btn {
-    font-family: 'Merriweather', serif !important;
+    font-family: 'Pluto Sans Bold';
     min-height: 40px;
     width: 50%;
     padding: 20px 70px;
@@ -1649,7 +1667,6 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
     box-shadow: 0px 10px 10px #340c11;
     font-size: 17px;
     text-transform: uppercase;
-    font-weight: bold;
     line-height: 19px;
     transition: border 0.1s ease-in;
     letter-spacing: 2px;
@@ -1668,8 +1685,6 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         border-image-source: linear-gradient(to right bottom, #BF953F, #FCF6BA, #B38728);
         border-image-slice: 1;
         color: #d0b376;
-        text-shadow: 1px 4px 6px rgba(14, 14, 14, 0.678);
-        font-weight: 900;
         background: #340c11;
         outline: none;
         z-index: 2; }
@@ -1818,9 +1833,9 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
       .lp-pant .lp-pant--home__caption__text {
         max-width: 100%;
         color: #d0b376;
-        font-weight: 500;
+        font-family: 'Utopia';
         text-transform: uppercase;
-        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.11);
         font-size: 35px;
         letter-spacing: 5px;
         margin-bottom: 0; }
@@ -1882,12 +1897,13 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         .lp-pant .lp-pant--footer__conhecendo {
           flex-direction: column; } }
     .lp-pant .lp-pant--footer .title {
-      margin-right: 20px; }
+      font-family: 'Utopia';
+      margin-right: 23px; }
       @media screen and (max-width: 768px) {
         .lp-pant .lp-pant--footer .title {
           margin-right: 0; } }
     .lp-pant .lp-pant--footer p {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Pluto Sans Regular';
       font-size: 13px;
       line-height: 18px;
       font-weight: 500;
@@ -1927,7 +1943,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
         .lp-pant .lp-pant--info__conhecendo__importancia {
           margin-top: 30px; } }
       .lp-pant .lp-pant--info__conhecendo__importancia__title {
-        font-weight: bolder;
+        font-family: 'Utopia';
         color: #d0b376;
         font-size: 48px;
         text-align: center; }
@@ -1959,6 +1975,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
           .lp-pant .lp-pant--info__conhecendo__importancia__item:not(:last-child) {
             margin-bottom: 40px; } }
         .lp-pant .lp-pant--info__conhecendo__importancia__item__title {
+          font-family: 'Utopia';
           color: #d0b376;
           font-size: 30px;
           margin-bottom: 10px;
@@ -1966,7 +1983,6 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";$(".lp-pant
           text-transform: uppercase;
           text-shadow: 1px 1px 10px rgba(2, 2, 2, 0.295); }
         .lp-pant .lp-pant--info__conhecendo__importancia__item__text {
-          font-family: 'Montserrat', sans-serif;
           text-transform: lowercase;
           color: #fff; }
       .lp-pant .lp-pant--info__conhecendo__queratina {

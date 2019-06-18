@@ -42,7 +42,7 @@
                 }
 
                 &__title {
-                    font-weight: bolder;
+                    font-family: 'Utopia';
                     color: #d0b376;
                     font-size: 48px;
                     text-align: center;
@@ -82,6 +82,7 @@
                     }
 
                     &__title {
+                        font-family: 'Utopia';
                         color: #d0b376;
                         font-size: 30px;
                         margin-bottom: 10px;
@@ -91,7 +92,6 @@
                     }
 
                     &__text {
-                        font-family: 'Montserrat', sans-serif;
                         text-transform: lowercase;
                         color: #fff;
                     }
