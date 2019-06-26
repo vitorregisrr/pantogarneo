@@ -1,22 +1,17 @@
 @font-face {
-  font-family: "Pluto Sans Regular";
-  src: url("./fonts/PlutoSansRegular.eot");
-  src: url("./fonts/PlutoSansRegular.ttf") format("truetype"); }
+  font-family: "Walsheim Regular";
+  src: url("./fonts/WalsheimProRegular.eot");
+  src: url("./fonts/WalsheimProRegular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Pluto Sans Light";
-  src: url("./fonts/PlutoSansLight.eot");
-  src: url("./fonts/PlutoSansLight.ttf") format("truetype"); }
+  font-family: "Walsheim Medium";
+  src: url("./fonts/WalsheimProMedium.eot");
+  src: url("./fonts/WalsheimProMedium.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Pluto Sans Bold";
-  src: url("./fonts/PlutoSansBold.eot");
-  src: url("./fonts/PlutoSansBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Utopia";
-  src: url("./fonts/UtopiaSemiboldItalic.eot");
-  src: url("./fonts/UtopiaSemiboldItalic.ttf") format("truetype"); }
+  font-family: "Walsheim Bold";
+  src: url("./fonts/WalsheimProBold.eot");
+  src: url("./fonts/WalsheimProBold.ttf") format("truetype"); }
 
 .lp-pant {
   /*!
@@ -33,7 +28,7 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  font-family: 'Pluto Sans Regular', serif; }
+  font-family: 'Walsheim Regular', serif; }
 
 @-ms-viewport {
   .lp-pant {
@@ -1536,13 +1531,13 @@
       -ms-flex-item-align: stretch !important;
       align-self: stretch !important; } }
   .lp-pant .lp-pant--inner-title {
-    font-family: 'Utopia';
+    font-family: 'Walsheim Bold';
     font-size: 34px;
     font-weight: lighter;
     color: #d0b376;
     margin-bottom: 30px; }
   .lp-pant .lp-pant--inner-desc {
-    font-family: 'Pluto Sans Regular';
+    font-family: 'Walsheim Regular';
     font-size: 16px;
     font-weight: lighter;
     line-height: 25px;
@@ -1606,7 +1601,7 @@
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
   .lp-pant .lp-pant--btn {
-    font-family: 'Pluto Sans Bold';
+    font-family: 'Walsheim Bold';
     min-height: 40px;
     width: 50%;
     padding: 20px 70px;
@@ -1781,7 +1776,7 @@
       .lp-pant .lp-pant--home__caption__text {
         max-width: 100%;
         color: #d0b376;
-        font-family: 'Utopia';
+        font-family: 'Walsheim Bold';
         text-transform: uppercase;
         text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.11);
         font-size: 35px;
@@ -1845,13 +1840,13 @@
         .lp-pant .lp-pant--footer__conhecendo {
           flex-direction: column; } }
     .lp-pant .lp-pant--footer .title {
-      font-family: 'Utopia';
+      font-family: 'Walsheim Bold';
       margin-right: 23px; }
       @media screen and (max-width: 768px) {
         .lp-pant .lp-pant--footer .title {
           margin-right: 0; } }
     .lp-pant .lp-pant--footer p {
-      font-family: 'Pluto Sans Regular';
+      font-family: 'Walsheim Medium';
       font-size: 13px;
       line-height: 18px;
       font-weight: 500;
@@ -1891,7 +1886,7 @@
         .lp-pant .lp-pant--info__conhecendo__importancia {
           margin-top: 30px; } }
       .lp-pant .lp-pant--info__conhecendo__importancia__title {
-        font-family: 'Utopia';
+        font-family: 'Walsheim Bold';
         color: #d0b376;
         font-size: 48px;
         text-align: center; }
@@ -1923,7 +1918,7 @@
           .lp-pant .lp-pant--info__conhecendo__importancia__item:not(:last-child) {
             margin-bottom: 40px; } }
         .lp-pant .lp-pant--info__conhecendo__importancia__item__title {
-          font-family: 'Utopia';
+          font-family: 'Walsheim Bold';
           color: #d0b376;
           font-size: 30px;
           margin-bottom: 10px;
