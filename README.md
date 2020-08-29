@@ -1,5 +1,6 @@
-# pantogarneo
+# Landing Page Pantogar-Neo
 
-### [Clique aqui para acessar a prévia estática no GHPages](https://vitorregisrr.github.io/pantogarneo/pages/)
+## [Clique aqui para acessar a prévia estática no GHPages](https://vitorregisrr.github.io/pantogarneo/pages/)
 
-## Este projeto contém um enviroment GULP especial para compilação de landing pages (especificações do cliente)!
+
+Este projeto contém um enviroment GULP especial para uma extrema compilação de landing pages.
